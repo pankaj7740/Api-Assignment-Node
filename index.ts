@@ -79,8 +79,8 @@ app.put("/product/:id",((request:Request,response:Response)=>{
         response.status(405).json({
             status: false,
             message: "products not found",
-            // data:null
-            data : undefined
+            data:null
+            // data : undefined
         })
     }
     
@@ -101,7 +101,8 @@ app.delete("/product/:id",(request:Request,response:Response)=>{
         response.status(405).json({
             status:false,
             message:"products not found",
-            data:undefined
+            // data:undefined
+            data:null
         })
     }
 })
